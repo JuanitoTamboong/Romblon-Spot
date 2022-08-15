@@ -15,6 +15,7 @@ ul{
 }
 /*navigation-bar*/
 .navbar{
+    background: #0707076c;
     color: whitesmoke;
     display: flex;
     position: absolute;
@@ -25,12 +26,16 @@ ul{
     padding: 20px;
     text-shadow: 1px 2px 3px #000;
 }
-/*.navbar img {
+.navbar img {
     height: 50px;
     width: 50px;
-    clip-path: circle(); 
+    position: absolute;
+}
+.logo{
     position: relative;
-}*/
+    left: 50px;
+    top: 15px;
+}
 .nav-links{
     display: flex;
     align-items: center;
@@ -49,7 +54,7 @@ ul{
 header{
     width: 100vw;
     height: 100vh;
-    background-image: url(https://www.jonnymelon.com/wp-content/uploads/2019/11/bonbon-beach-romblon-2.jpg);
+    background-image: url('https://live.staticflickr.com/65535/52066136950_a579cc446b_b.jpg');
   background-position:center;
   background-size: cover;
   display: flex;
@@ -90,15 +95,13 @@ margin-bottom: 30px;
     right: 50px;
     width: 40px;
     cursor: pointer;
-    height: 40px;
+    height: 30px;
     display: none;
-    background: #f6eff4;
     border-radius: 10px;
 
 }
 .menu-btn:hover{
-    background-color:#bb1624;
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: all 1s ease ;
 }
 
@@ -113,10 +116,11 @@ section{
     color: #109a10;
 }
 .row{
+    border-radius: 15px;
    display: flex;
    align-items: center;
    justify-content: space-between;
-   background: #109a10;
+   background: #363d365a;
    padding: 15px;
 }
 .row .col{
@@ -151,7 +155,7 @@ p{
 }
 .explore-content{
     width: 80%;
-    padding: 50px;
+    padding: 13px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -160,16 +164,18 @@ p{
     color:#109a10;
     font-size: 7vmin;
     margin: 50px;
+    text-align: center;
     text-shadow: 0px 1px 2px #000;
 
 }
 .explore-content .line{
-    margin-bottom:50px;
+    margin-top:-25px;
 
 }
 .explore-content p{
     color: #fff;
     text-shadow: 0px 1px 2px #000;
+    text-align: center;
 }
 .explore-content .ctn{
     margin-top: 40px;
@@ -216,25 +222,35 @@ margin: 10px;
     color: #fff;
     margin: 20px auto;
 }
+.footer img{
+    height: 30px;
+    padding: 4px;
+}
+.footer img:hover{
+    background: #109a10;
+    border-radius: 50%;
+    transform: scale(1.2) ease;
+}
 /*mobile view*/
 @media only screen and (max-width:850px){
     .menu-btn{
         display: block;
+        top: 13px;
     }
     .navbar{
         padding: 0;
     }
     .logo{
         position: absolute;
-        top: 30px;
-        left: 30px;
+        top: 13px;
+        left: 53px;
     }
     .nav-links {
         flex-direction: column;
         width: 100%;
         height: 100vh;
         justify-content: center;
-        background: #434854;
+        background: #434854c6;
         margin-top: -900px;
         transition: all 0.7s ease;
     }
@@ -258,6 +274,18 @@ flex-direction: column;
 .explore-content{
     width: 100%;
 
+}
+.content-col h1 {
+    text-align: center;
+}
+.content-col .line{
+ margin-left: 100px;
+}
+.content-col p{
+    text-align: center;
+}
+.content-col .ctn{
+    margin:0;
 }
 .tours .col{
     width: 100%;
