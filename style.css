@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@
 }
 body,html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
@@ -15,6 +17,7 @@ ul{
 }
 /*navigation-bar*/
 .navbar{
+    cursor: pointer;
     background: #0707076c;
     color: whitesmoke;
     display: flex;
@@ -89,6 +92,11 @@ margin-bottom: 30px;
     border-radius: 30px;
     color:whitesmoke;
 }
+.ctn:hover{
+    transition: all 1s;
+    background: #109a10 ;
+
+}
 .menu-btn{
     position: relative;
     top: 28px;
@@ -128,6 +136,11 @@ section{
  flex-direction: column;
  align-items: center;
 }
+/*imgage transtion*/
+.row .col img:hover{
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
 .events .row{
     margin-top: 50px ;
 
@@ -140,6 +153,8 @@ h4{
 p{
     padding: 0px 40px;
     color: #0f0d0d;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 500;
 }
 .events .ctn{
     margin-top: 30px;
@@ -165,7 +180,7 @@ p{
     font-size: 7vmin;
     margin: 50px;
     text-align: center;
-    text-shadow: 0px 1px 2px #000;
+    text-shadow: 0px 2px 4px #000;
 
 }
 .explore-content .line{
@@ -196,6 +211,10 @@ align-items: center;
 max-width: 200px;
 margin: 10px;
 }
+.image-gallery img:hover{
+    transform: scale(1.2);
+    transition: all 1s ease;
+}
 .content-col h1{
     font-size:6vmin ;
     color: #bb1624;
@@ -221,6 +240,10 @@ margin: 10px;
 .footer p{
     color: #fff;
     margin: 20px auto;
+    cursor: pointer;
+}
+.footer p:hover{
+    color: #109a10;
 }
 .footer img{
     height: 30px;
