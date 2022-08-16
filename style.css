@@ -17,7 +17,6 @@ ul{
 }
 /*navigation-bar*/
 .navbar{
-    overflow:hidden;
     cursor: pointer;
     background: #0707076c;
     color: whitesmoke;
